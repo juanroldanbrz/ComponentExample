@@ -12,4 +12,11 @@ public interface LoginService {
    */
   User login(String username, String password);
 
+  /**
+   * Register a new user
+   * @param user
+   * @return saved user
+   */
+  User register(User user);
+
 }

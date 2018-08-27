@@ -22,7 +22,7 @@ public class DatabaseComponentImpl implements DatabaseComponent {
      * We need concurrentHashMap to avoid concurrency issues
      */
     userIdToUserMap = new ConcurrentHashMap<>();
-    userIdToUserMap = new ConcurrentHashMap<>();
+    userNameToUserMap = new ConcurrentHashMap<>();
   }
 
   @Override

@@ -39,4 +39,9 @@ public class LoginServiceImpl implements LoginService{
     user.setPassword(NO_PASSWORD);
     return user;
   }
+
+  @Override
+  public User register(User user) {
+    return databaseComponent.save(user);
+  }
 }
