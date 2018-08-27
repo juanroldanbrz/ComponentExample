@@ -1,17 +1,9 @@
 package com.juanbrz.componentexample.service;
 
-import com.juanbrz.componentexample.component.DatabaseComponent;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import com.juanbrz.componentexample.model.User;
 
-@Service
-public class LoginService {
+public interface LoginService {
 
-  private final DatabaseComponent databaseComponent;
-
-  @Autowired
-  public LoginService(final DatabaseComponent databaseComponent){
-    this.databaseComponent = databaseComponent;
-  }
+  User login(String username, String password);
 
 }
